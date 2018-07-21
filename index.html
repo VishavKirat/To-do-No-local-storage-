@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>JavaScript DOM Tutorials</title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">BookMania</h1>
+          <p>Time to learn something</p>
+          <form id="search-books">
+            <input type="text" placeholder="Search books..." />
+          </form>
+	    	</div>
+	    </header>
+	    <div id="book-list">
+	    	<h2 class="title">Books to Read</h2>
+	    	<ul>
+	    		<li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Wise Man's Fear</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">Kafka on the Shore</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+	    			<span class="name">The Master and the Margarita</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+          <li>
+	    			<span class="name">Name of the Wind</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <form id="add-book">
+	    	<input type="text" placeholder="Add a book..." />
+	    	<button id='addBtn'>Add</button>
+	    	<input type="checkbox" id='hide' />
+	    	<label for="hide">Hide All</label>
+	    </form>
+    <div id='tabbed-content'>
+      <ul class='tab'>
+        <li data-target='#about' class='active'>About</li>
+        <li data-target='#contact'>Contact</li>
+      </ul>
+      <div class="pannel active" id ='about'>
+        <p>This is About panel. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quo voluptatibus, at saepe officiis! Quia culpa optio, repellat, vitae omnis minus libero fugiat reiciendis qui corporis aperiam, nesciunt aut assumenda.</p>
+      </div>
+      <div class="pannel" id ='contact'>
+        <p>This is contact panel. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quo voluptatibus, at saepe officiis! Quia culpa optio, repellat, vitae omnis minus libero fugiat reiciendis qui corporis aperiam, nesciunt aut assumenda.</p>
+      </div>
+    </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
